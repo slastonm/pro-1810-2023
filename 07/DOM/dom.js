@@ -112,7 +112,4 @@ window.onload = function(){
     console.log(testTitle.classList.contains('bg-info'));
     console.log(testTitle.classList);
 
-
-
-
 };
