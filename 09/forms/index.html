@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        form{
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input{
+            display: block;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .form-row{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="form-row">
+            <label for="firsName">
+                First name
+            </label>
+            <input type="text" id="firsName">
+        </div>
+        <div class="form-row">
+            <label for="userPassword">
+                User password
+            </label>
+            <input type="password" id="userPassword">
+        </div>        
+        <div class="form-row">
+            <label for="email">
+                User email
+            </label>
+            <input type="text" id="email">
+        </div>
+        <input type="submit" value="Submit form">
+    </form>
+</body>
+</html>
