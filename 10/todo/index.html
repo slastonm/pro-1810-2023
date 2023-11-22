@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="todo.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .container{
+            width: 900px;
+            margin: 0 auto;
+        }
+        .add{
+            position: fixed;
+            bottom: 100px;
+            right: 400px;
+            padding: 40px;
+            background-color: blueviolet;
+        }
+        .overlay{
+            background-color: black;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 2;
+            display: none;
+        }
+        .modal{
+            position: absolute;
+            z-index: 3;
+            padding: 20px;
+            display: none;
+            padding: 20px;
+            background-color: lemonchiffon;
+            left: 50%;
+        }
+        .overlay.open,
+        .modal.open{
+            display: block;
+        }
+        .todo-item{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-block">
+            <!-- <button class="changeTheme">
+                
+            </button> -->
+        </div>
+        <div class="todo-list">
+            <div class="todo-item">
+                <!-- <input type="checkbox" name="" id=""> -->
+                Name <button>edit</button> <button> delete</button>
+            </div>
+        </div>
+        <button class="add">
+            +
+        </button>
+    </div>
+    <div class="modal">
+        <input type="text" id="todoName">
+        <button class="close">
+            Close
+        </button>
+        <button class="apply">
+            Apply
+        </button>
+    </div>
+    <div class="overlay"></div>
+</body>
+</html>

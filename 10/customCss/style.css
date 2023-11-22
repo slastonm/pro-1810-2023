@@ -1,0 +1,9 @@
+:root{
+    --text-color:white;
+    --body-bg:purple;
+}
+body{
+    margin: 0;
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
