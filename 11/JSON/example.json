@@ -1,0 +1,12 @@
+{
+    "userName":"Tom",
+    "userAge":30,
+    "isStudy":false,
+    "company":[
+        {"name":"Sony"},
+        {"name":"Microsoft"}
+    ],
+    "skillInfo":{
+        "js":"pro"
+    }
+}
