@@ -1,5 +1,7 @@
 window.onload = function(){
     
     document.cookie = "Test=TestValue";
-    // console.log(document.cookie);
+    let ck = document.cookie;
+    console.log(document.cookie);
+    console.log(ck);
 }
